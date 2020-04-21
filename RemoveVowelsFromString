@@ -12,7 +12,7 @@ Note:
 S consists of lowercase English letters only.
 1 <= S.length <= 1000
 
-Solution:
+Solution 1:
 class Solution {
     public String removeVowels(String S) {
         char[] c = s.toCharArray();
@@ -27,5 +27,19 @@ class Solution {
                 res[j++]=c[i]; 
         }
         return new String(res);    
+    }
+}
+
+Solution 2:
+class Solution {
+    public String removeVowels(String s) {
+        s = s.replace("a","");
+        s = s.replace("e","");
+        s = s.replace("i","");
+        s = s.replace("o","");
+        s = s.replace("u","");
+        
+        
+        return s;
     }
 }
